@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER
 ]=]
 
--- Instances: 19 | Scripts: 3 | Modules: 0
+-- Instances: 25 | Scripts: 6 | Modules: 0
 local G2L = {};
 
 -- StarterGui.BlocoDeNotas
@@ -18,12 +18,13 @@ G2L["1"]["Name"] = [[BlocoDeNotas]];
 G2L["2"] = Instance.new("ImageButton", G2L["1"]);
 G2L["2"]["BorderSizePixel"] = 0;
 G2L["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2"]["ImageColor3"] = Color3.fromRGB(96, 27, 110);
 G2L["2"]["Image"] = [[http://www.roblox.com/asset/?id=15956417675]];
 G2L["2"]["Size"] = UDim2.new(0, 44, 0, 40);
 G2L["2"]["HoverImage"] = [[http://www.roblox.com/asset/?id=15956417675]];
 G2L["2"]["Name"] = [[Open]];
 G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2"]["Position"] = UDim2.new(0.09186946600675583, 0, 0.2851405739784241, 0);
+G2L["2"]["Position"] = UDim2.new(0.09186946600675583, -65, 0.2913905680179596, -87);
 
 -- StarterGui.BlocoDeNotas.Open.UICorner
 G2L["3"] = Instance.new("UICorner", G2L["2"]);
@@ -33,920 +34,347 @@ G2L["3"] = Instance.new("UICorner", G2L["2"]);
 G2L["4"] = Instance.new("LocalScript", G2L["2"]);
 
 
--- StarterGui.BlocoDeNotas.Drag
-G2L["5"] = Instance.new("Frame", G2L["1"]);
-G2L["5"]["BorderSizePixel"] = 0;
-G2L["5"]["BackgroundColor3"] = Color3.fromRGB(60, 60, 60);
-G2L["5"]["Size"] = UDim2.new(0, 473, 0, 245);
-G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5"]["Position"] = UDim2.new(0.12918660044670105, 0, 0.4819277226924896, 0);
-G2L["5"]["Visible"] = false;
-G2L["5"]["Name"] = [[Drag]];
+-- StarterGui.BlocoDeNotas.Open.sex
+G2L["5"] = Instance.new("LocalScript", G2L["2"]);
+G2L["5"]["Name"] = [[sex]];
 
--- StarterGui.BlocoDeNotas.Drag.TextBox
-G2L["6"] = Instance.new("ScrollingFrame", G2L["5"]);
-G2L["6"]["ZIndex"] = 3;
-G2L["6"]["CanvasSize"] = UDim2.new(0, 908, 0, 180);
-G2L["6"]["MidImage"] = [[rbxassetid://148970562]];
-G2L["6"]["TopImage"] = [[rbxassetid://148970562]];
-G2L["6"]["BackgroundColor3"] = Color3.fromRGB(38, 38, 38);
-G2L["6"]["HorizontalScrollBarInset"] = Enum.ScrollBarInset.ScrollBar;
-G2L["6"]["Size"] = UDim2.new(1, 0, 0.9473876953125, 0);
-G2L["6"]["BorderColor3"] = Color3.fromRGB(62, 62, 62);
-G2L["6"]["ScrollBarThickness"] = 5;
-G2L["6"]["Position"] = UDim2.new(0, 0, 0.0526123046875, 0);
-G2L["6"]["Name"] = [[TextBox]];
-G2L["6"]["BottomImage"] = [[rbxassetid://148970562]];
+-- StarterGui.BlocoDeNotas.vscode
+G2L["6"] = Instance.new("Frame", G2L["1"]);
+G2L["6"]["BorderSizePixel"] = 0;
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(57, 34, 80);
+G2L["6"]["Size"] = UDim2.new(0, 473, 0, 294);
+G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["Position"] = UDim2.new(0.21608643233776093, 0, 0.19374999403953552, 0);
+G2L["6"]["Visible"] = false;
+G2L["6"]["Name"] = [[vscode]];
 
--- StarterGui.BlocoDeNotas.Drag.TextBox.SourceText
-G2L["7"] = Instance.new("StringValue", G2L["6"]);
-G2L["7"]["Name"] = [[SourceText]];
+-- StarterGui.BlocoDeNotas.vscode.Tabs
+G2L["7"] = Instance.new("Frame", G2L["6"]);
+G2L["7"]["BorderSizePixel"] = 0;
+G2L["7"]["BackgroundColor3"] = Color3.fromRGB(74, 50, 94);
+G2L["7"]["Size"] = UDim2.new(0, 395, 0, 24);
+G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7"]["Position"] = UDim2.new(0.1649048626422882, 0, 0, 0);
+G2L["7"]["Name"] = [[Tabs]];
 
--- StarterGui.BlocoDeNotas.Drag.TextBox.Main
-G2L["8"] = Instance.new("LocalScript", G2L["6"]);
-G2L["8"]["Name"] = [[Main]];
+-- StarterGui.BlocoDeNotas.vscode.Tabs.UICorner
+G2L["8"] = Instance.new("UICorner", G2L["7"]);
 
--- StarterGui.BlocoDeNotas.Drag.TextBox.UIListLayout
-G2L["9"] = Instance.new("UIListLayout", G2L["6"]);
-G2L["9"]["FillDirection"] = Enum.FillDirection.Horizontal;
-G2L["9"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
--- StarterGui.BlocoDeNotas.Drag.TextBox.Lines
-G2L["a"] = Instance.new("TextLabel", G2L["6"]);
-G2L["a"]["ZIndex"] = 4;
-G2L["a"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-G2L["a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["a"]["TextSize"] = 15;
+-- StarterGui.BlocoDeNotas.vscode.Tabs.Tabs
+G2L["9"] = Instance.new("Folder", G2L["7"]);
+G2L["9"]["Name"] = [[Tabs]];
+
+-- StarterGui.BlocoDeNotas.vscode.Tabs.Tabs.MainFrame
+G2L["a"] = Instance.new("TextButton", G2L["9"]);
+G2L["a"]["BorderSizePixel"] = 0;
+G2L["a"]["BackgroundColor3"] = Color3.fromRGB(74, 60, 100);
+G2L["a"]["TextSize"] = 10;
+G2L["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["a"]["Size"] = UDim2.new(0.03232493996620178, 0, 1, 0);
-G2L["a"]["Text"] = [[1]];
-G2L["a"]["Name"] = [[Lines]];
-G2L["a"]["Visible"] = false;
-G2L["a"]["BackgroundTransparency"] = 1;
+G2L["a"]["Size"] = UDim2.new(0, 112, 0, 24);
+G2L["a"]["Name"] = [[MainFrame]];
+G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a"]["Text"] = [[Script.luau]];
 
--- StarterGui.BlocoDeNotas.Drag.TextBox.Source
-G2L["b"] = Instance.new("TextBox", G2L["6"]);
-G2L["b"]["CursorPosition"] = -1;
-G2L["b"]["PlaceholderColor3"] = Color3.fromRGB(205, 205, 205);
-G2L["b"]["ZIndex"] = 3;
-G2L["b"]["RichText"] = true;
-G2L["b"]["TextSize"] = 15;
-G2L["b"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["b"]["TextWrapped"] = true;
-G2L["b"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+-- StarterGui.BlocoDeNotas.vscode.Tabs.Tabs.MainFrame.Style
+G2L["b"] = Instance.new("ImageLabel", G2L["a"]);
+G2L["b"]["BorderSizePixel"] = 0;
 G2L["b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["b"]["TextColor3"] = Color3.fromRGB(205, 205, 205);
-G2L["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["b"]["MultiLine"] = true;
+G2L["b"]["Image"] = [[http://www.roblox.com/asset/?id=13546048]];
+G2L["b"]["Size"] = UDim2.new(0, 22, 0, 17);
+G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["Name"] = [[Style]];
 G2L["b"]["BackgroundTransparency"] = 1;
-G2L["b"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["b"]["Text"] = [[]];
-G2L["b"]["Name"] = [[Source]];
-G2L["b"]["ClearTextOnFocus"] = false;
+G2L["b"]["Position"] = UDim2.new(0, 0, 0.125, 0);
 
--- StarterGui.BlocoDeNotas.Drag.TextBox.Source.Vars_
-G2L["c"] = Instance.new("TextLabel", G2L["b"]);
-G2L["c"]["ZIndex"] = 5;
-G2L["c"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-G2L["c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["c"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["c"]["TextSize"] = 15;
-G2L["c"]["TextColor3"] = Color3.fromRGB(133, 215, 248);
-G2L["c"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["c"]["Text"] = [[
-]];
-G2L["c"]["Name"] = [[Vars_]];
-G2L["c"]["BackgroundTransparency"] = 1;
+-- StarterGui.BlocoDeNotas.vscode.Tabs.Tabs.MainFrame.LocalScript
+G2L["c"] = Instance.new("LocalScript", G2L["a"]);
 
--- StarterGui.BlocoDeNotas.Drag.TextBox.Source.Tokens_
-G2L["d"] = Instance.new("TextLabel", G2L["b"]);
-G2L["d"]["ZIndex"] = 5;
-G2L["d"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-G2L["d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["d"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["d"]["TextSize"] = 15;
+
+-- StarterGui.BlocoDeNotas.vscode.Tabs.Tabs.2Tab
+G2L["d"] = Instance.new("TextButton", G2L["9"]);
+G2L["d"]["BorderSizePixel"] = 0;
+G2L["d"]["BackgroundColor3"] = Color3.fromRGB(74, 60, 100);
+G2L["d"]["TextSize"] = 10;
+G2L["d"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["d"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["d"]["Text"] = [[    
-                 
-                             
-                                                                                                          
-                                     
+G2L["d"]["Visible"] = false;
+G2L["d"]["Size"] = UDim2.new(0, 112, 0, 24);
+G2L["d"]["Name"] = [[2Tab]];
+G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d"]["Text"] = [[Script.luau]];
+G2L["d"]["Position"] = UDim2.new(0.28354430198669434, 0, 0, 0);
 
-                                                           
-                                                                                
-
-  
-                 =          (                         )()
-     (           )                                 ]];
-G2L["d"]["Name"] = [[Tokens_]];
-G2L["d"]["BackgroundTransparency"] = 1;
-
--- StarterGui.BlocoDeNotas.Drag.TextBox.Source.Strings_
-G2L["e"] = Instance.new("TextLabel", G2L["b"]);
-G2L["e"]["ZIndex"] = 5;
-G2L["e"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+-- StarterGui.BlocoDeNotas.vscode.Tabs.Tabs.2Tab.Style2
+G2L["e"] = Instance.new("ImageLabel", G2L["d"]);
+G2L["e"]["BorderSizePixel"] = 0;
 G2L["e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["e"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["e"]["TextSize"] = 15;
-G2L["e"]["TextColor3"] = Color3.fromRGB(174, 242, 150);
-G2L["e"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["e"]["Text"] = [[    
-                 
-                             
-                                                                                                          
-                                     
-
-                                                           
-                                                                                
-
-  
-                             "return \"Hello world!\""   
-                                                   ]];
-G2L["e"]["Name"] = [[Strings_]];
+G2L["e"]["Image"] = [[http://www.roblox.com/asset/?id=13546048]];
+G2L["e"]["Size"] = UDim2.new(0, 22, 0, 17);
+G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e"]["Name"] = [[Style2]];
 G2L["e"]["BackgroundTransparency"] = 1;
+G2L["e"]["Position"] = UDim2.new(-0.0021700176876038313, 0, 0.125, 0);
 
--- StarterGui.BlocoDeNotas.Drag.TextBox.Source.Numbers_
-G2L["f"] = Instance.new("TextLabel", G2L["b"]);
-G2L["f"]["ZIndex"] = 4;
-G2L["f"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-G2L["f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["f"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["f"]["TextSize"] = 15;
-G2L["f"]["TextColor3"] = Color3.fromRGB(255, 199, 0);
-G2L["f"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["f"]["Text"] = [[    
-                 
-                             
-                                                                                                          
-                                     
+-- StarterGui.BlocoDeNotas.vscode.Tabs.Tabs.2Tab.LocalScript
+G2L["f"] = Instance.new("LocalScript", G2L["d"]);
 
-                                                           
-                                                                                
 
-  
-                                                         
-                                                   ]];
-G2L["f"]["Name"] = [[Numbers_]];
-G2L["f"]["BackgroundTransparency"] = 1;
+-- StarterGui.BlocoDeNotas.vscode.Explorer
+G2L["10"] = Instance.new("Frame", G2L["6"]);
+G2L["10"]["BorderSizePixel"] = 0;
+G2L["10"]["BackgroundColor3"] = Color3.fromRGB(74, 50, 94);
+G2L["10"]["Size"] = UDim2.new(0, 78, 0, 294);
+G2L["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10"]["Name"] = [[Explorer]];
 
--- StarterGui.BlocoDeNotas.Drag.TextBox.Source.Keywords_
-G2L["10"] = Instance.new("TextLabel", G2L["b"]);
-G2L["10"]["ZIndex"] = 5;
-G2L["10"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-G2L["10"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["10"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["10"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["10"]["TextSize"] = 15;
-G2L["10"]["TextColor3"] = Color3.fromRGB(249, 110, 125);
-G2L["10"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["10"]["Text"] = [[    
-                 
-                             
-                                                                                                          
-                                     
+-- StarterGui.BlocoDeNotas.vscode.Explorer.UICorner
+G2L["11"] = Instance.new("UICorner", G2L["10"]);
 
-                                                           
-                                                                                
 
-  
-local                                                    
-                                                   ]];
-G2L["10"]["Name"] = [[Keywords_]];
-G2L["10"]["BackgroundTransparency"] = 1;
+-- StarterGui.BlocoDeNotas.vscode.Explorer.NewTab
+G2L["12"] = Instance.new("TextButton", G2L["10"]);
+G2L["12"]["BorderSizePixel"] = 0;
+G2L["12"]["BackgroundColor3"] = Color3.fromRGB(74, 60, 100);
+G2L["12"]["TextSize"] = 14;
+G2L["12"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Italic);
+G2L["12"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12"]["Size"] = UDim2.new(0, 69, 0, 20);
+G2L["12"]["Name"] = [[NewTab]];
+G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12"]["Text"] = [[New tab]];
+G2L["12"]["Position"] = UDim2.new(0.05128205195069313, 0, 0.03401360660791397, 0);
 
--- StarterGui.BlocoDeNotas.Drag.TextBox.Source.Globals_
-G2L["11"] = Instance.new("TextLabel", G2L["b"]);
-G2L["11"]["ZIndex"] = 5;
-G2L["11"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-G2L["11"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["11"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["11"]["TextSize"] = 15;
-G2L["11"]["TextColor3"] = Color3.fromRGB(133, 215, 248);
-G2L["11"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["11"]["Text"] = [[    
-                 
-                             
-                                                                                                          
-                                     
+-- StarterGui.BlocoDeNotas.vscode.Explorer.NewTab.UICorner
+G2L["13"] = Instance.new("UICorner", G2L["12"]);
 
-                                                           
-                                                                                
 
-  
-                  loadstring                             
-print                                              ]];
-G2L["11"]["Name"] = [[Globals_]];
-G2L["11"]["BackgroundTransparency"] = 1;
+-- StarterGui.BlocoDeNotas.vscode.Explorer.NewTab.LocalScript
+G2L["14"] = Instance.new("LocalScript", G2L["12"]);
 
--- StarterGui.BlocoDeNotas.Drag.TextBox.Source.Comments_
-G2L["12"] = Instance.new("TextLabel", G2L["b"]);
-G2L["12"]["TextWrapped"] = true;
-G2L["12"]["ZIndex"] = 5;
-G2L["12"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-G2L["12"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["12"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["12"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["12"]["TextSize"] = 15;
-G2L["12"]["TextColor3"] = Color3.fromRGB(60, 201, 60);
-G2L["12"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["12"]["Text"] = [[--[[ This highlights is not made 100% of me hasck777 --[[]];
-G2L["12"]["Name"] = [[Comments_]];
-G2L["12"]["BackgroundTransparency"] = 1;
 
--- StarterGui.BlocoDeNotas.Drag.LocalScript
-G2L["13"] = Instance.new("LocalScript", G2L["5"]);
+-- StarterGui.BlocoDeNotas.vscode.Code
+G2L["15"] = Instance.new("TextBox", G2L["6"]);
+G2L["15"]["CursorPosition"] = -1;
+G2L["15"]["BorderSizePixel"] = 0;
+G2L["15"]["RichText"] = true;
+G2L["15"]["TextSize"] = 14;
+G2L["15"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["15"]["TextWrapped"] = true;
+G2L["15"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["15"]["BackgroundColor3"] = Color3.fromRGB(74, 60, 100);
+G2L["15"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["15"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["15"]["MultiLine"] = true;
+G2L["15"]["Size"] = UDim2.new(0, 345, 0, 270);
+G2L["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["15"]["Text"] = [[a]];
+G2L["15"]["Position"] = UDim2.new(0.1649048626422882, 0, 0.08163265138864517, 0);
+G2L["15"]["Name"] = [[Code]];
+G2L["15"]["ClearTextOnFocus"] = false;
 
+-- StarterGui.BlocoDeNotas.vscode.UICorner
+G2L["16"] = Instance.new("UICorner", G2L["6"]);
+
+
+-- StarterGui.BlocoDeNotas.vscode.Code2
+G2L["17"] = Instance.new("TextBox", G2L["6"]);
+G2L["17"]["BorderSizePixel"] = 0;
+G2L["17"]["RichText"] = true;
+G2L["17"]["TextSize"] = 14;
+G2L["17"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["17"]["TextWrapped"] = true;
+G2L["17"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["17"]["BackgroundColor3"] = Color3.fromRGB(74, 60, 100);
+G2L["17"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["17"]["MultiLine"] = true;
+G2L["17"]["Size"] = UDim2.new(0, 345, 0, 270);
+G2L["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17"]["Text"] = [[]];
+G2L["17"]["Position"] = UDim2.new(0.1649048626422882, 0, 0.08163265138864517, 0);
+G2L["17"]["Visible"] = false;
+G2L["17"]["Name"] = [[Code2]];
+G2L["17"]["ClearTextOnFocus"] = false;
+
+-- StarterGui.BlocoDeNotas.vscode.TextLabel
+G2L["18"] = Instance.new("TextLabel", G2L["6"]);
+G2L["18"]["BorderSizePixel"] = 0;
+G2L["18"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["18"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Italic);
+G2L["18"]["TextSize"] = 11;
+G2L["18"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["18"]["Size"] = UDim2.new(0, 50, 0, 13);
+G2L["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18"]["Text"] = [[Version beta]];
+G2L["18"]["BackgroundTransparency"] = 1;
+G2L["18"]["Position"] = UDim2.new(0.8942917585372925, 0, 0.08163265138864517, 0);
+
+-- StarterGui.BlocoDeNotas.vscode.sex
+G2L["19"] = Instance.new("LocalScript", G2L["6"]);
+G2L["19"]["Name"] = [[sex]];
 
 -- StarterGui.BlocoDeNotas.Open.LocalScript
 local function C_4()
-	local script = G2L["4"];
-	image = script.Parent
-	image.Draggable = true
-	image.Active = true
-	image.Selectable = true
-
-	wait()
-
-	script.Parent.MouseButton1Click:Connect(function(piroca)
-		local gui = script.Parent.Parent.Drag
-		gui.Visible = not gui.Visible
+local script = G2L["4"];
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.vscode.Visible == false then
+			script.Parent.Parent.vscode.Visible = true
+		elseif script.Parent.Parent.vscode.Visible == true then
+			script.Parent.Parent.vscode.Visible = false
+		end
 	end)
+	
+	
 end;
 task.spawn(C_4);
--- StarterGui.BlocoDeNotas.Drag.TextBox.Main
-local function C_8()
-	local script = G2L["8"];
-	local settings = {
-		Highlight = true; -- Highlight like you know. Script Text color?
-		Lines =false; -- The textbox will have some lines like when you press enter.
-		Scroll = true; -- So if it has alot of lines and that it gets off the screen this will help.
-		HighlightVariables=false;--Highlights the local and global enviorments
-		SplitScanLines=false;-- This trick is used to Scan lines instead of the whole source (Breaks multilined strings and comments) 
-		WaitIfRendered=true;-- This trick will reduce lag by waiting if the game has rendered
-		AutomaticSettingChange=true;--Automatically changes the settings for the best experience
-		LoadLexer=true;--Makes one token and creates highlights out of it instead of many tokens (reduce lag)
-	}
-	local RunService = game:GetService("RunService")
-	local Fps=0
-	local TimeFunction = RunService:IsRunning() and time or os.clock
-
-	local LastIteration, Start
-	local FrameUpdateTable = {}
-
-	local function HeartbeatUpdate()
-		LastIteration = TimeFunction()
-		for Index = #FrameUpdateTable, 1, -1 do
-			FrameUpdateTable[Index + 1] = FrameUpdateTable[Index] >= LastIteration - 1 and FrameUpdateTable[Index] or nil
-		end
-
-		FrameUpdateTable[1] = LastIteration
-		Fps = tonumber(math.floor(TimeFunction() - Start >= 1 and #FrameUpdateTable or #FrameUpdateTable / (TimeFunction() - Start)))
-	end
-
-	Start = TimeFunction()
-	RunService.Heartbeat:Connect(HeartbeatUpdate)
-
-	--[==[
-	This syntax is the best syntax on the marketplace
-	Only created by MiAiHsIs1226
-	-- Credits
-	Credits to the lexer module creator
-	Credits to MikePetar for scroll
-	Credits to me for literally doing nothing
-	]==]
-	local function parse(tokens)
-		local localvarables = {}
-		local whitespacecharactersfound=0
-		local readabletokens = {}
-		local tokennumbers = {}
-		for i,v in pairs(tokens) do
-			if v.Source == " " then
-				whitespacecharactersfound+=1
-				continue
-			end
-			if v.Type=="space" then
-				whitespacecharactersfound+=1
-				continue
-			end
-
-			table.insert(readabletokens,v)
-			table.insert(tokennumbers,{i})
-		end
-
-
-		for i,v in pairs(readabletokens) do
-			pcall(function()
-				if v.Source == "local" then
-					local _,name =pcall(function()return readabletokens[i+1].Source;end)
-					if _==false then
-						error("Syntax Error: Expected more code")
-					end
-					if name == "function" then
-						_,name =pcall(function()return readabletokens[i+2].Source;end)
-						if _==false then
-							error("Syntax Error: Expected more code")
-						end
-						if readabletokens[i+2].Type~="iden" then
-							error("Syntax Error: Name isnt an idient")
-						end
-						table.insert(localvarables,{Name = name,Type="Local",Source = "function",number = tokennumbers[i][1]+4})
-					else
-						table.insert(localvarables,{Name = name,Type="Local",Source = readabletokens[i+3].Source,number = tokennumbers[i]
-							[1]+1})
-					end
-				elseif v.Type == "iden"  then
-
-					if readabletokens[i-1] then
-						if readabletokens[i-1].Type ~= "keyword" and readabletokens[i-1].Type ~= "symbol"  then
-							local source = readabletokens[i+2].Source
-							table.insert(localvarables,{Name = v.Source,Type="Global",Source = source;number = tokennumbers[i]
-								[1]})  
-						elseif readabletokens[i-1].Source=="function" then
-							local source = "function"
-							table.insert(localvarables,{Name = v.Source,Type="Global",Source = source;number = tokennumbers[i]
-								[1]})  
-
-						end
-					else
-						local source = readabletokens[i+2].Source
-						table.insert(localvarables,{Name = v.Source,Type="Global",Source = source,number = tokennumbers[i][1]})  
-					end
+-- StarterGui.BlocoDeNotas.Open.sex
+local function C_5()
+local script = G2L["5"];
+	local UserInputService = game:GetService("UserInputService")
+	local runService = (game:GetService("RunService"));
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	function Lerp(a, b, m)
+		return a + (b - a) * m
+	end;
+	
+	local lastMousePos
+	local lastGoalPos
+	local DRAG_SPEED = (8); -- // The speed of the UI darg.
+	function Update(dt)
+		if not (startPos) then return end;
+		if not (dragging) and (lastGoalPos) then
+			gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
+			return 
+		end;
+	
+		local delta = (lastMousePos - UserInputService:GetMouseLocation())
+		local xGoal = (startPos.X.Offset - delta.X);
+		local yGoal = (startPos.Y.Offset - delta.Y);
+		lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
+		gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
+	end;
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			lastMousePos = UserInputService:GetMouseLocation()
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
 				end
 			end)
 		end
-
-		return (localvarables)
-	end
-	local function lexerscan(text)
-		local lexer = coroutine.wrap(function()
-
-			local lexer = {}
-
-			local yield, wrap  = coroutine.yield, coroutine.wrap
-			local strfind      = string.find
-			local strsub       = string.sub
-			local append       = table.insert
-			local type         = type
-
-			local NUMBER1	= "^[%+%-]?%d+%.?%d*[eE][%+%-]?%d+"
-			local NUMBER2	= "^[%+%-]?%d+%.?%d*"
-			local NUMBER3	= "^0x[%da-fA-F]+"
-			local NUMBER4	= "^%d+%.?%d*[eE][%+%-]?%d+"
-			local NUMBER5	= "^%d+%.?%d*"
-			local IDEN		= "^[%a_][%w_]*"
-			local WSPACE	= "^%s+"
-			local STRING1	= "^(['\"])%1"							
-			local STRING2	= [[^(['"])(\*)%2%1]]
-			local STRING3	= [[^(['"]).-[^\](\*)%2%1]]
-			local STRING4	= "^(['\"]).-.*"						
-			local STRING5	= "^%[(=*)%[.-%]%1%]"					
-			local STRING6	= "^%[%[.-.*"							
-			local CHAR1		= "^''"
-			local CHAR2		= [[^'(\*)%1']]
-			local CHAR3		= [[^'.-[^\](\*)%1']]
-			local PREPRO	= "^#.-[^\\]\n"
-			local MCOMMENT1	= "^%-%-%[(=*)%[.-%]%1%]"				
-			local MCOMMENT2	= "^%-%-%[%[.-.*"						
-			local SCOMMENT1	= "^%-%-.-\n"							
-			local SCOMMENT2	= "^%-%-.-.*"							
-
-			local lua_keyword = {
-				["and"] = true,  ["break"] = true,  ["do"] = true,      ["else"] = true,      ["elseif"] = true,
-				["end"] = true,  ["false"] = true,  ["for"] = true,     ["function"] = true,  ["if"] = true,
-				["in"] = true,   ["local"] = true,  ["nil"] = true,     ["not"] = true,       ["while"] = true,
-				["or"] = true,   ["repeat"] = true, ["return"] = true,  ["then"] = true,      ["true"] = true,
-				["self"] = true, ["until"] = true
-			}
-
-			local lua_builtin = {
-				["assert"] = true;["collectgarbage"] = true;["error"] = true;["_G"] = true;
-				["gcinfo"] = true;["getfenv"] = true;["getmetatable"] = true;["ipairs"] = true;
-				["loadstring"] = true;["newproxy"] = true;["next"] = true;["pairs"] = true;
-				["pcall"] = true;["print"] = true;["rawequal"] = true;["rawget"] = true;["rawset"] = true;
-				["select"] = true;["setfenv"] = true;["setmetatable"] = true;["tonumber"] = true;
-				["tostring"] = true;["type"] = true;["unpack"] = true;["_VERSION"] = true;["xpcall"] = true;
-				["delay"] = true;["elapsedTime"] = true;["require"] = true;["spawn"] = true;["tick"] = true;
-				["time"] = true;["typeof"] = true;["UserSettings"] = true;["wait"] = true;["warn"] = true;
-				["game"] = true;["Enum"] = true;["script"] = true;["shared"] = true;["workspace"] = true;
-				["Axes"] = true;["BrickColor"] = true;["CFrame"] = true;["Color3"] = true;["ColorSequence"] = true;
-				["ColorSequenceKeypoint"] = true;["Faces"] = true;["Instance"] = true;["NumberRange"] = true;
-				["NumberSequence"] = true;["NumberSequenceKeypoint"] = true;["PhysicalProperties"] = true;
-				["Random"] = true;["Ray"] = true;["Rect"] = true;["Region3"] = true;["Region3int16"] = true;
-				["TweenInfo"] = true;["UDim"] = true;["UDim2"] = true;["Vector2"] = true;["Vector3"] = true;
-				["Vector3int16"] = true;["next"] = true;
-				["os"] = true;
-				["os.time"] = true;["os.date"] = true;["os.difftime"] = true;
-				["debug"] = true;
-				["debug.traceback"] = true;["debug.profilebegin"] = true;["debug.profileend"] = true;
-				["math"] = true;
-				["math.abs"] = true;["math.acos"] = true;["math.asin"] = true;["math.atan"] = true;["math.atan2"] = true;["math.ceil"] = true;["math.clamp"] = true;["math.cos"] = true;["math.cosh"] = true;["math.deg"] = true;["math.exp"] = true;["math.floor"] = true;["math.fmod"] = true;["math.frexp"] = true;["math.ldexp"] = true;["math.log"] = true;["math.log10"] = true;["math.max"] = true;["math.min"] = true;["math.modf"] = true;["math.noise"] = true;["math.pow"] = true;["math.rad"] = true;["math.random"] = true;["math.randomseed"] = true;["math.sign"] = true;["math.sin"] = true;["math.sinh"] = true;["math.sqrt"] = true;["math.tan"] = true;["math.tanh"] = true;
-				["coroutine"] = true;
-				["coroutine.create"] = true;["coroutine.resume"] = true;["coroutine.running"] = true;["coroutine.status"] = true;["coroutine.wrap"] = true;["coroutine.yield"] = true;
-				["string"] = true;
-				["string.byte"] = true;["string.char"] = true;["string.dump"] = true;["string.find"] = true;["string.format"] = true;["string.len"] = true;["string.lower"] = true;["string.match"] = true;["string.rep"] = true;["string.reverse"] = true;["string.sub"] = true;["string.upper"] = true;["string.gmatch"] = true;["string.gsub"] = true;
-				["table"] = true;
-				["table.concat"] = true;["table.insert"] = true;["table.remove"] = true;["table.sort"] = true;
-			}
-
-			local function tdump(tok)
-				return yield(tok, tok)
-			end
-
-			local function ndump(tok)
-				return yield("number", tok)
-			end
-
-			local function sdump(tok)
-				return yield("string", tok)
-			end
-
-			local function cdump(tok)
-				return yield("comment", tok)
-			end
-
-			local function wsdump(tok)
-				return yield("space", tok)
-			end
-
-			local function lua_vdump(tok)
-				if (lua_keyword[tok]) then
-					return yield("keyword", tok)
-				elseif (lua_builtin[tok]) then
-					return yield("builtin", tok)
-				else
-					return yield("iden", tok)
-				end
-			end
-
-			local lua_matches = {
-				{IDEN,      lua_vdump},        -- Indentifiers
-				{WSPACE,    wsdump},           -- Whitespace
-				{NUMBER3,   ndump},            -- Numbers
-				{NUMBER4,   ndump},
-				{NUMBER5,   ndump},
-				{STRING1,   sdump},            -- Strings
-				{STRING2,   sdump},
-				{STRING3,   sdump},
-				{STRING4,   sdump},
-				{STRING5,   sdump},            -- Multiline-Strings
-				{STRING6,   sdump},            -- Multiline-Strings
-
-				{MCOMMENT1, cdump},            -- Multiline-Comments
-				{MCOMMENT2, cdump},			
-				{SCOMMENT1, cdump},            -- Singleline-Comments
-				{SCOMMENT2, cdump},
-
-				{"^==",     tdump},            -- Operators
-				{"^~=",     tdump},
-				{"^<=",     tdump},
-				{"^>=",     tdump},
-				{"^%.%.%.", tdump},
-				{"^%.%.",   tdump},
-				{"^.",      tdump}
-			}
-
-			local num_lua_matches = #lua_matches
-
-
-			--- Create a plain token iterator from a string.
-			-- @tparam string s a string.
-			function lexer.scan(s)
-
-				local function lex(first_arg)
-
-					local line_nr = 0
-					local sz = #s
-					local idx = 1
-
-					-- res is the value used to resume the coroutine.
-					local function handle_requests(res)
-						while (res) do
-							local tp = type(res)
-							-- Insert a token list:
-							if (tp == "table") then
-								res = yield("", "")
-								for i = 1,#res do
-									local t = res[i]
-									res = yield(t[1], t[2])
-								end
-							elseif (tp == "string") then -- Or search up to some special pattern:
-								local i1, i2 = strfind(s, res, idx)
-								if (i1) then
-									local tok = strsub(s, i1, i2)
-									idx = (i2 + 1)
-									res = yield("", tok)
-								else
-									res = yield("", "")
-									idx = (sz + 1)
-								end
-							else
-								res = yield(line_nr, idx)
-							end
-						end
-					end
-
-					handle_requests(first_arg)
-					line_nr = 1
-
-					while (true) do
-
-						if (idx > sz) then
-							while (true) do
-								handle_requests(yield())
-							end
-						end
-
-						for i = 1,num_lua_matches do
-							local m = lua_matches[i]
-							local pat = m[1]
-							local fun = m[2]
-							local findres = {strfind(s, pat, idx)}
-							local i1, i2 = findres[1], findres[2]
-							if (i1) then
-								local tok = strsub(s, i1, i2)
-								idx = (i2 + 1)
-								lexer.finished = (idx > sz)
-								local res = fun(tok, findres)
-								if (tok:find("\n")) then
-									-- Update line number:
-									local _,newlines = tok:gsub("\n", {})
-									line_nr = (line_nr + newlines)
-								end
-								handle_requests(res)
-								break
-							end
-						end
-
-					end
-
-				end
-
-				return wrap(lex)
-
-			end
-
-			return lexer
-		end)()
-		local function doesvalueexist(value,tab)
-			for i,v in pairs(tab) do
-				if v == value then
-					return true
-				end
-			end
-			return false or nil
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
 		end
-		local symbols = {
-			";";
-			"^";
-			"(";
-			")";
-			"%";
-			"/";
-			":";
-			"#";
-			"-";
-			"=";
-			"+";
-			"{";
-			"}";
-			"~";
-			"<";
-			">";
-			"*";
-			",";
-			".";
-			"\""}
-		local t={}
-		local split=text:split("\n")
-		if settings.SplitScanLines==true then
-			for _, splitv in pairs(text:split("\n")) do 
-				for i,v in (lexer.scan(splitv)) do
-					local type= i
-					if doesvalueexist(type,symbols)  then-- makes the type "symbol" if it is a symbol
-						type="symbol"
-					end
-					table.insert(t,{Type=type,Source=v})
-				end
-				table.insert(t,{Type="space",Source="\n"})--dont remove this unless you know what you're doing
-				if settings.WaitIfRendered then
-					game:GetService("RunService").RenderStepped:Wait()
-				end
-			end
-		else
-
-			for i,v in (lexer.scan(text)) do
-				local type= i
-				if doesvalueexist(type,symbols)  then-- makes the type "symbol" if it is a symbol
-					type="symbol"
-				end
-				table.insert(t,{Type=type,Source=v})
-				if settings.WaitIfRendered then
-					game:GetService("RunService").RenderStepped:Wait()
-				end
-			end
-
-
-
-		end
-		return(t)
-	end
-	local GetTypeToMakeSyntax=function(s,t)
-		if type(s)=="string" then
-			if t=="var" then
-				local tokens=lexerscan(s)
-				local r=""
-				local variables=parse(tokens)
-				local s={}
-				for i,v in pairs(variables) do
-					s[v.Name]=v
-				end
-				for i,v in pairs(tokens) do
-					if s[v.Source] then
-						if tokens[i-1] then
-							if tokens[i-1].Source~="." then
-								r=r..v.Source
-							else
-								continue
-							end
-						else
-							r=r..v.Source
-						end
-					else
-						local s=string.gsub(v.Source,"%d",function(c)return string.rep(" ",#c)end)
-						local p=string.gsub(s,"%p",function(c)return string.rep(" ",#c)end)
-						local a=string.gsub(p,"%a",function(c)return string.rep(" ",#c)end)
-						r=r..a
-					end
-				end
-
-				return(r)
-			else
-				local tokens=lexerscan(s)
-				local r=""
-				for i,v in pairs(tokens) do
-					if v.Type==t then
-						r=r..v.Source
-					else
-						local s=string.gsub(v.Source,"%d",function(c)return string.rep(" ",#c)end)
-						local p=string.gsub(s,"%p",function(c)return string.rep(" ",#c)end)
-						local a=string.gsub(p,"%a",function(c)return string.rep(" ",#c)end)
-						r=r..a
-					end
-				end
-
-				return(r)
-			end
-		elseif type(s)=="table" then
-			if t=="var" then
-				local tokens=s
-				local r=""
-				local variables=parse(tokens)
-				local s={}
-				for i,v in pairs(variables) do
-					s[v.Name]=v
-				end
-				for i,v in pairs(tokens) do
-					if s[v.Source] then
-						if tokens[i-1] then
-							if tokens[i-1].Source~="." then
-								r=r..v.Source
-							else
-								continue
-							end
-						else
-							r=r..v.Source
-						end
-					else
-						local s=string.gsub(v.Source,"%d",function(c)return string.rep(" ",#c)end)
-						local p=string.gsub(s,"%p",function(c)return string.rep(" ",#c)end)
-						local a=string.gsub(p,"%a",function(c)return string.rep(" ",#c)end)
-						r=r..a
-					end
-				end
-
-				return(r)
-			else
-				local tokens=s
-				local r=""
-				for i,v in pairs(tokens) do
-					if v.Type==t then
-						r=r..v.Source
-					else
-						local s=string.gsub(v.Source,"%d",function(c)return string.rep(" ",#c)end)
-						local p=string.gsub(s,"%p",function(c)return string.rep(" ",#c)end)
-						local a=string.gsub(p,"%a",function(c)return string.rep(" ",#c)end)
-						r=r..a
-					end
-				end
-
-				return(r)
-			end
-		end
-	end
-
-	local L_1_ = script.Parent.Source
-	local L_2_ = Vector2.new(0, 0)  
-	local L_3_Org = {      "getrawmetatable",       "game",       "workspace",       "script",       "math",       "string",       "table",       "print",       "wait",       "BrickColor",       "Color3",       "next",       "pairs",       "ipairs",       "select",       "unpack",       "Instance",       "Vector2",       "Vector3",       "CFrame",       "Ray",       "UDim2",       "Enum",       "assert",       "error",       "warn",       "tick",       "loadstring",       "_G",       "shared",       "getfenv",       "setfenv",       "newproxy",       "setmetatable",       "getmetatable",       "os",       "debug",       "pcall",       "ypcall",       "xpcall",       "rawequal",       "rawset",       "rawget",       "tonumber",       "tostring",       "type",       "typeof",       "_VERSION",       "coroutine",       "delay",       "require",       "spawn",       "LoadLibrary",       "settings",       "stats",       "time",       "UserSettings",       "version",       "Axes",       "ColorSequence",       "Faces",       "ColorSequenceKeypoint",       "NumberRange",       "NumberSequence",       "NumberSequenceKeypoint",       "gcinfo",       "elapsedTime",       "collectgarbage",       "PhysicalProperties",       "Rect",       "Region3",       "Region3int16",       "UDim",       "Vector2int16",       "Vector3int16" } 
-	local L_3_ = {      "getrawmetatable",       "game",       "workspace",       "script",       "math",       "string",       "table",       "print",       "wait",       "BrickColor",       "Color3",       "next",       "pairs",       "ipairs",       "select",       "unpack",       "Instance",       "Vector2",       "Vector3",       "CFrame",       "Ray",       "UDim2",       "Enum",       "assert",       "error",       "warn",       "tick",       "loadstring",       "_G",       "shared",       "getfenv",       "setfenv",       "newproxy",       "setmetatable",       "getmetatable",       "os",       "debug",       "pcall",       "ypcall",       "xpcall",       "rawequal",       "rawset",       "rawget",       "tonumber",       "tostring",       "type",       "typeof",       "_VERSION",       "coroutine",       "delay",       "require",       "spawn",       "LoadLibrary",       "settings",       "stats",       "time",       "UserSettings",       "version",       "Axes",       "ColorSequence",       "Faces",       "ColorSequenceKeypoint",       "NumberRange",       "NumberSequence",       "NumberSequenceKeypoint",       "gcinfo",       "elapsedTime",       "collectgarbage",       "PhysicalProperties",       "Rect",       "Region3",       "Region3int16",       "UDim",       "Vector2int16",       "Vector3int16" } 
-	local L_4_ = {       "and",       "break",       "do",       "else",       "elseif",       "end",       "false",       "for",       "function",       "goto",       "if",       "in",       "local",       "nil",       "not",       "or",       "repeat",       "return",       "then",       "true",       "until",       "while" } 
-
-	local function L_5_func(L_49_arg1)       
-		local L_50_, L_51_ = L_49_arg1.CanvasSize.Y.Offset, L_49_arg1.AbsoluteWindowSize.Y       
-		local L_52_ = L_50_ - L_51_       
-		if L_52_ < 0 then             
-			L_52_ = 0
-		end       
-		local L_53_ = Vector2.new(L_49_arg1.CanvasPosition.X, L_52_)       
-		return L_53_ 
-	end 
-	local function ofodguisgfhjjksfghkgh(L_49_arg1)       
-		local L_50_, L_51_ = L_49_arg1.CanvasSize.X.Offset, L_49_arg1.AbsoluteWindowSize.X       
-		local L_52_ = L_50_ - L_51_       
-		if L_52_ < 0 then             
-			L_52_ = 0
-		end       
-		local L_53_ = Vector2.new(L_52_,L_49_arg1.CanvasPosition.Y)       
-		return L_53_ 
-	end 
-	local function GetLineSelected(s)
-		local text =  s.Text
-		local p = s.CursorPosition
-		local text2 = ""
-		for i = p,1,-1 do
-			local c = text:sub(i,i)
-			if c == "\n" then
-				break
-			else
-				text2 = text2 .. c
-			end
-		end
-
-		return (text2:reverse())
-	end
-
-	wait(.2) 
-	local L_6_ = 20 
-	L_1_:GetPropertyChangedSignal("Text"):Connect(function()
-		if settings.Highlight then
-			local L_54_ = L_1_.Comments_       
-			local L_56_ = L_1_.Tokens_       
-			local L_57_ = L_1_.Numbers_       
-			local L_58_ = L_1_.Strings_             
-			local L_61_ = L_1_.Keywords_       
-			local L_62_ = L_1_.Globals_  
-			local L_90_ = L_1_.Vars_  
-			if settings.LoadLexer then
-				local tokens= lexerscan(L_1_.Text) 
-				L_54_.Text=GetTypeToMakeSyntax(tokens,"comment")
-
-				L_58_.Text=GetTypeToMakeSyntax(tokens,"string")
-
-				L_57_.Text=GetTypeToMakeSyntax(tokens,"number")
-
-				L_62_.Text=GetTypeToMakeSyntax(tokens,"builtin")
-
-				L_56_.Text=GetTypeToMakeSyntax(tokens,"symbol")
-
-				L_61_.Text=GetTypeToMakeSyntax(tokens,"keyword")
-
-				if settings.HighlightVariables then
-					L_90_.Text=GetTypeToMakeSyntax(tokens,"var")
-				end
-
-			else
-				spawn(function()
-					L_54_.Text=GetTypeToMakeSyntax(L_1_.Text,"comment")
-				end)
-				spawn(function()
-					L_58_.Text=GetTypeToMakeSyntax(L_1_.Text,"string")
-				end)
-				spawn(function()
-					L_57_.Text=GetTypeToMakeSyntax(L_1_.Text,"number")
-				end)
-				spawn(function()
-					L_62_.Text=GetTypeToMakeSyntax(L_1_.Text,"builtin")
-				end)
-				spawn(function()
-					L_56_.Text=GetTypeToMakeSyntax(L_1_.Text,"symbol")
-				end)
-				spawn(function()
-					L_61_.Text=GetTypeToMakeSyntax(L_1_.Text,"keyword")
-				end)
-				spawn(function()
-					if settings.HighlightVariables then
-						L_90_.Text=GetTypeToMakeSyntax(L_1_.Text,"var")
-					end
-				end)
-
-			end
-		end
-		local L_63_ = 1    
-		if settings.Scroll then
-			local X = L_1_.TextBounds.X
-			L_1_.Parent.CanvasSize = (UDim2.new(0, L_1_.TextBounds.X + 55 + 5, 0, L_1_.TextBounds.Y))   
-		end
-		if settings.Lines then
-			L_1_.Text:gsub('\n', function()             
-				L_63_ = L_63_ + 1       end)      
-			L_1_.Parent.Lines.Text = ""       
-			for L_64_forvar1 = 1, L_63_ do             
-				L_1_.Parent.Lines.Text = L_1_.Parent.Lines.Text..L_64_forvar1.."\n"       
-			end       
-		end
-		if settings.Scroll then
-			spawn(function()
-				if L_1_.Parent.CanvasPosition.X == L_2_.X then
-					L_1_.Parent.CanvasPosition = ofodguisgfhjjksfghkgh(L_1_.Parent)  
-				else             
-					L_2_ = ofodguisgfhjjksfghkgh(L_1_.Parent)   
-				end 
-			end)
-			wait()
-			if L_1_.Text:sub(#L_1_.Text,#L_1_.Text) == "\n" then
-				L_1_.Parent.CanvasPosition = Vector2.new()
-			end
-
-			if L_1_.Parent.CanvasPosition.Y == L_2_.Y then
-				L_1_.Parent.CanvasPosition = L_5_func(L_1_.Parent)       
-			else             
-				L_2_ = L_5_func(L_1_.Parent)       
-			end 
-		end
-
-
-
-	end) 
-	if settings.Scroll then
-		L_1_.MouseWheelBackward:Connect(function(L_65_arg1, L_66_arg2)       
-			wait(.1)      
-			game.TweenService:Create(L_1_.Parent, TweenInfo.new(.5, Enum.EasingStyle.Quint), {CanvasPosition = L_1_.Parent.CanvasPosition + Vector2.new(0, L_6_)}):Play()
-			L_6_ = L_6_ + 5       
-			wait(1)       
-			L_6_ = L_6_ - 5 	
-		end) 
-		L_1_.MouseWheelForward:Connect(function(L_67_arg1, L_68_arg2)    
-			wait(.1)      
-			game.TweenService:Create(L_1_.Parent, TweenInfo.new(.5, Enum.EasingStyle.Quint), {CanvasPosition = L_1_.Parent.CanvasPosition + Vector2.new(0,-L_6_)}):Play()
-			L_6_ = L_6_ + 5       
-			wait(1)       
-			L_6_ = L_6_ - 5 
-		end)
-	end
-	if settings.Lines then
-		script.Parent.Lines.Visible = true
-		L_1_.Position = UDim2.new(0,30,0,0)
-	else
-		L_1_.Position = UDim2.new()
-	end
-	if settings.AutomaticSettingChange== true then
-
-		spawn(function()
-			pcall(function()
-				while wait(10) do
-					settings.Highlight=true
-					if Fps>50 then
-						settings.SplitScanLines=false
-						settings.LoadLexer=false
-						settings.WaitIfRendered=false
-
-					elseif Fps<60 and Fps>40 then
-						settings.SplitScanLines=false
-						settings.LoadLexer=true
-						settings.WaitIfRendered=true
-						settings.HighlightVariables=false
-
-					elseif Fps<35 then
-						settings.SplitScanLines=true
-						settings.LoadLexer=true
-						settings.WaitIfRendered=true
-						settings.HighlightVariables=false
-
-					elseif Fps>10 then
-						settings.Highlight=false
-					end
-				end
-			end)
-		end)
-	end
+	end)
+	
+	runService.Heartbeat:Connect(Update)
 end;
-task.spawn(C_8);
--- StarterGui.BlocoDeNotas.Drag.LocalScript
-local function C_13()
-	local script = G2L["13"];
-	frame = script.Parent
-	frame.Draggable = true
-	frame.Active = true
-	frame.Selectable = true
-
-
+task.spawn(C_5);
+-- StarterGui.BlocoDeNotas.vscode.Tabs.Tabs.MainFrame.LocalScript
+local function C_c()
+local script = G2L["c"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Code.Visible = true
+		script.Parent.Parent.Parent.Parent.Code2.Visible = false
+	end)
 end;
-task.spawn(C_13);
+task.spawn(C_c);
+-- StarterGui.BlocoDeNotas.vscode.Tabs.Tabs.2Tab.LocalScript
+local function C_f()
+local script = G2L["f"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Code.Visible = false
+		script.Parent.Parent.Parent.Parent.Code2.Visible = true
+	end)
+end;
+task.spawn(C_f);
+-- StarterGui.BlocoDeNotas.vscode.Explorer.NewTab.LocalScript
+local function C_14()
+local script = G2L["14"];
+	local tab = script.Parent.Parent.Parent.Tabs
+	
+	script.Parent.MouseButton1Click:Connect(function(cria)
+		if tab.Tabs["2Tab"].Visible == false then
+			tab.Tabs["2Tab"].Visible = true
+		end
+	end)
+	
+end;
+task.spawn(C_14);
+-- StarterGui.BlocoDeNotas.vscode.sex
+local function C_19()
+local script = G2L["19"];
+	local UserInputService = game:GetService("UserInputService")
+	local runService = (game:GetService("RunService"));
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	function Lerp(a, b, m)
+		return a + (b - a) * m
+	end;
+	
+	local lastMousePos
+	local lastGoalPos
+	local DRAG_SPEED = (8); -- // The speed of the UI darg.
+	function Update(dt)
+		if not (startPos) then return end;
+		if not (dragging) and (lastGoalPos) then
+			gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
+			return 
+		end;
+	
+		local delta = (lastMousePos - UserInputService:GetMouseLocation())
+		local xGoal = (startPos.X.Offset - delta.X);
+		local yGoal = (startPos.Y.Offset - delta.Y);
+		lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
+		gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
+	end;
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			lastMousePos = UserInputService:GetMouseLocation()
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	runService.Heartbeat:Connect(Update)
+end;
+task.spawn(C_19);
 
 return G2L["1"], require;
